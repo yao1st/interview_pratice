@@ -1,2 +1,2 @@
-# intervirew_pratice
+# interview_pratice
 刷题
