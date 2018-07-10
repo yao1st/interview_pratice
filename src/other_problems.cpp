@@ -3,6 +3,7 @@
 //
 #include <math.h>
 #include <iostream>
+#include <list>
 
 int max_dice_point = 6;
 
@@ -44,7 +45,14 @@ void printDiceSumProbability(int dice_number)
     }
 }
 
+int removeXthElementFromLoop(int *arr_for_construct_loop, int length, int index)
+{
+    std::list<int> loop;
+    for (int i = 0; i < length; ++i) {
+        loop.push_back(arr_for_construct_loop[i]);
+    }
 
+}
 
 int main()
 {
