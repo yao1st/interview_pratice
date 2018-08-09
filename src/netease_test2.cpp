@@ -3,13 +3,14 @@
 //
 
 #include <iostream>
+#include <vector>
 
 bool containAllType(const std::string &pw)
 {
     bool C = false;
 
     for (int i = 0; i < pw.length(); ++i) {
-        if (pw[i] <= 'Z' && pw[i] >= "A")
+        if (pw[i] <= 'Z' && pw[i] >= 'A')
         {
             C = true;
             break;
@@ -26,7 +27,7 @@ bool containAllType(const std::string &pw)
     }
 
     bool n = false;
-    for (int k = 0; k < pw.p; ++k) {
+    for (int k = 0; k < pw.length(); ++k) {
         if (pw[k] <= '9' && pw[k] >= '0')
         {
             n = true;
@@ -36,7 +37,13 @@ bool containAllType(const std::string &pw)
 
     bool special = false;
     for (int l = 0; l < pw.length(); ++l) {
-        if (pw[l] = '!' || (pw[l] >=35 && pw[l] <=38) || (pw[l] >=40 && pw[l] <=47) ||　(pw[l] >=60 && pw[l] <=64) || (pw[l] >=93 && pw[l] <=95) || pw[l] == '{'|| pw[l] == '}')
+        if (pw[l] == '!' ||
+                (pw[l] >=35 && pw[l] <=38) ||
+                    (pw[l] >=40 && pw[l] <=47) ||
+        (pw[l] >=60 && pw[l] <=64) ||
+        (pw[l] >=93 && pw[l] <=95) ||
+        pw[l] == '{'||
+        pw[l] == '}')
         {
             special = true;
             break;
@@ -170,7 +177,7 @@ void check(const std::string &pw)
 }
 
 
-int main(int argc, char *argv)
+int main(int argc, char **argv)
 {
     int t;
     std::cin >> t;

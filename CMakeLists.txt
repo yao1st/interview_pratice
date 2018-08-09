@@ -13,4 +13,4 @@ include_directories(include)
 #add_executable(common_io src/common_io.cpp)
 #add_executable(other_problems src/other_problems.cpp)
 
-add_executable(neteasy_test2 src/neteasy_test.cpp)
+add_executable(neteasy_test2 src/netease_test2.cpp)
