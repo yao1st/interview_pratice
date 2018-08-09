@@ -79,8 +79,9 @@ bool increasing(const std::string &pw, char c1, char c2) {
                 }
             }
         }
-        return false;
     }
+    return false;
+
 }
 
 bool equal(const std::string &pw, char c1, char c2) {
@@ -110,8 +111,8 @@ bool equal(const std::string &pw, char c1, char c2) {
                 }
             }
         }
-        return false;
     }
+    return false;
 }
 
 bool decrease(const std::string &pw, char c1, char c2) {
@@ -141,8 +142,8 @@ bool decrease(const std::string &pw, char c1, char c2) {
                 }
             }
         }
-        return false;
     }
+    return false;
 }
 
 
