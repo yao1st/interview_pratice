@@ -3,6 +3,7 @@
 //
 #include <iostream>
 #include <vector>
+#include <cmath>
 #define START_POINT 5000
 int main(int argc, char **argv)
 {
@@ -66,7 +67,7 @@ int main(int argc, char **argv)
                     rate = 0.45;
                     tax_offset = 80000 * (0.45 - 0.35) + 55000 * (0.35 - 0.3) + 35000 * (0.3 - 0.25) + 25000 * (0.25 - 0.2) + 12000 * (0.2 - 0.1) + 3000 * (0.1 - 0.03);
                 }
-                tax[j] = (int) (v * rate + tax_offset);
+                tax[j] = round(v * rate - tax_offset);
             }
         }
 
